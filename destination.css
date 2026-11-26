@@ -1,0 +1,349 @@
+
+/* ========================================= */
+/* DESTINATION PAGE - GENERAL */
+/* ========================================= */
+
+body {
+    background-color: var(--warm-ivory);
+}
+
+/* ========================================= */
+/* DESTINATION NAVBAR */
+/* ========================================= */
+
+.destination-page .main-navbar,
+body:has(.destination-country) .main-navbar {
+    background-color: var(--mountain-blue) !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+    padding: 12px 0;
+}
+
+body:has(.destination-country) .main-navbar.scrolled {
+    background-color: var(--mountain-blue) !important;
+}
+
+
+/* ========================================= */
+/* INTRO SECTION */
+/* ========================================= */
+
+.destinations-intro {
+    padding: 150px 20px 70px;
+    text-align: center;
+    background-color: var(--warm-ivory);
+}
+
+.destinations-intro .container {
+    max-width: 850px;
+}
+
+.destination-eyebrow {
+    color: var(--trail-orange);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+.destinations-intro h1 {
+    color: var(--mountain-blue);
+    font-size: clamp(2.8rem, 5vw, 4.5rem);
+    margin-bottom: 25px;
+}
+
+.destinations-intro p {
+    color: var(--charcoal);
+    line-height: 1.9;
+}
+
+
+/* ========================================= */
+/* COUNTRY SECTIONS - FULL BACKGROUND */
+/* ========================================= */
+
+.destination-country {
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 50px;
+    overflow: hidden;
+}
+
+/* Blue overlay over the entire country section */
+
+.destination-country::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: var(--mountain-blue);
+    opacity: 0.72;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* Nepal background */
+
+.country-nepal {
+    background-image: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1920&q=80');
+}
+
+/* Bhutan background */
+
+.country-bhutan {
+    background-image: url('https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=1920&q=80');
+}
+
+/* Tibet background */
+
+.country-tibet {
+    background-image: url('https://images.unsplash.com/photo-1454496522488-7a8e488e8606?auto=format&fit=crop&w=1920&q=80');
+}
+
+
+/* ========================================= */
+/* COUNTRY HEADING */
+/* ========================================= */
+
+.country-heading {
+    position: relative;
+    z-index: 2;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 80px 20px 50px;
+    text-align: center;
+}
+
+.country-heading span {
+    color: var(--trail-orange);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.country-heading h2 {
+    font-size: clamp(3rem, 5vw, 4.5rem);
+    color: white;
+    margin: 15px 0 20px;
+}
+
+.country-heading p {
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.9;
+}
+
+
+/* ========================================= */
+/* DESTINATION LANDSCAPE WRAPPERS */
+/* ========================================= */
+
+.destination-landscape {
+    position: relative;
+    z-index: 2;
+    padding: 45px 0;
+    margin: 0;
+    background: none !important;
+}
+
+
+/* ========================================= */
+/* DESTINATION CARDS */
+/* ========================================= */
+
+.destination-card {
+    width: 75%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-color: var(--warm-ivory);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.18);
+}
+
+
+/* ========================================= */
+/* DESTINATION PHOTO */
+/* ========================================= */
+
+.destination-card-image {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+}
+
+.destination-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s ease;
+}
+
+.destination-card:hover .destination-card-image img {
+    transform: scale(1.05);
+}
+
+
+/* ========================================= */
+/* DESTINATION CONTENT */
+/* ========================================= */
+
+.destination-card-content {
+    padding: 40px;
+}
+
+.destination-number {
+    display: block;
+    color: var(--trail-orange);
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+.destination-card-content h3 {
+    color: var(--mountain-blue);
+    font-size: clamp(1.8rem, 3vw, 2.8rem);
+    margin-bottom: 20px;
+}
+
+.destination-card-content p {
+    color: var(--charcoal);
+    line-height: 1.9;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+
+/* ========================================= */
+/* DESTINATION LINK */
+/* ========================================= */
+
+.destination-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--mountain-blue);
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    border-bottom: 1px solid var(--trail-orange);
+    padding-bottom: 8px;
+    transition: all 0.3s ease;
+}
+
+.destination-link:hover {
+    color: var(--trail-orange);
+    gap: 15px;
+}
+
+
+/* ========================================= */
+/* CLOSING SECTION */
+/* ========================================= */
+
+.destination-closing {
+    padding: 110px 20px;
+    text-align: center;
+    color: white;
+    background:
+        linear-gradient(rgba(18, 62, 112, 0.88), rgba(18, 62, 112, 0.88)),
+        url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1920&q=80')
+        center / cover no-repeat;
+}
+
+.destination-closing h2 {
+    font-size: clamp(2.8rem, 5vw, 4.5rem);
+    margin-bottom: 25px;
+}
+
+.destination-closing p {
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 35px;
+}
+
+
+/* ========================================= */
+/* RESPONSIVE DESIGN - TABLET */
+/* ========================================= */
+
+@media (max-width: 991px) {
+
+    .destination-card {
+        width: 85%;
+    }
+
+    .destination-card-content {
+        padding: 30px;
+    }
+
+    .destination-landscape {
+        padding: 35px 0;
+    }
+}
+
+
+/* ========================================= */
+/* RESPONSIVE DESIGN - MOBILE */
+/* ========================================= */
+
+@media (max-width: 767px) {
+
+    .destination-card {
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
+
+    .destination-card-image {
+        aspect-ratio: 4 / 3;
+    }
+
+    .destination-card-content {
+        padding: 30px;
+    }
+
+    .destination-landscape {
+        padding: 30px 0;
+    }
+
+    .country-heading {
+        padding: 60px 20px 35px;
+    }
+
+    .destinations-intro {
+        padding: 120px 20px 50px;
+    }
+
+    .destination-closing {
+        padding: 80px 20px;
+    }
+}
+
+
+/* ========================================= */
+/* SMALL MOBILE */
+/* ========================================= */
+
+@media (max-width: 576px) {
+
+    .destination-card {
+        width: 92%;
+    }
+
+    .destination-card-content h3 {
+        font-size: 2.2rem;
+    }
+
+    .destination-card-content p {
+        font-size: 14px;
+    }
+
+    .destination-landscape {
+        padding: 25px 0;
+    }
+}

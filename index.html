@@ -1,0 +1,999 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Trekking Mountain Nepal | Himalayan Adventures</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar navbar-expand-lg main-navbar fixed-top">
+        <div class="container">
+
+            <!-- Logo -->
+            <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+
+                <!-- Replace this image with your logo -->
+                <img src="images/logo.png"
+                     alt="Trekking Mountain Nepal logo"
+                     class="navbar-logo"
+                     onerror="this.style.display='none'">
+
+                <div class="brand-text">
+                    <span>TREKKING MOUNTAIN</span>
+                    <small>NEPAL</small>
+                </div>
+
+            </a>
+
+            <!-- Mobile navbar button -->
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarMenu"
+                    aria-controls="navbarMenu"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbarMenu">
+
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/destinations.html">Popular Destinations</a>
+                    </li>
+
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#vegan">Vegan Experience</a>
+                    </li> -->
+
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li> -->
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <section class="hero-section" id="home">
+
+        <!-- Hero background image is controlled from style.css -->
+
+        <!-- Moving clouds -->
+        <div class="cloud cloud-one"></div>
+        <div class="cloud cloud-two"></div>
+        <div class="cloud cloud-three"></div>
+
+        <div class="hero-content container">
+
+            <p class="hero-subtitle">
+                A JOURNEY THROUGH THE HIMALAYAS
+            </p>
+
+            <h1>
+                Beyond the Trails<br>
+                Into the Heart of the Himalayas
+            </h1>
+
+            <p class="hero-description">
+                Discover the extraordinary landscapes of Nepal through
+                thoughtfully curated journeys, authentic encounters
+                and the quiet beauty of the mountains.
+            </p>
+
+            <a href="#treks" class="btn hero-button">
+                Discover Our Treks
+                <i class="bi bi-arrow-right"></i>
+            </a>
+
+        </div>
+
+        <div class="hero-bottom-text">
+            NEPAL &nbsp; · &nbsp; BHUTAN &nbsp; · &nbsp; ADVENTURE
+        </div>
+
+    </section>
+
+    <!-- ================= Countries ================= -->
+
+    <section class="section-padding destinations-section" id="destinations">
+
+        <div class="container">
+
+            <div class="section-heading text-center">
+
+                <p class="section-label">BEYOND THE MOUNTAINS </p>
+
+                <h2>Discover Our Destinations</h2>
+
+                 <p class="section-description">
+                  From the heart of the Himalayas to its hidden valleys and culturally rich landscapes, explore destinations across Nepal, India, Bhutan and Tibet. Each region offers its own unique beauty, traditions and unforgettable journeys.
+
+            </div>
+
+
+            <div class="row g-4">
+
+                <!-- Pokhara -->
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="destination-card">
+
+                        <img src="/images/nepal.jpg"
+                             alt="Pokhara Nepal">
+
+                        <div class="destination-overlay">
+                            <!-- <span>THE LAND OF THE HIMALAYAS</span> -->
+                            <h3>Nepal</h3>
+                            <p>
+                                From towering Himalayan peaks to peaceful valleys and ancient trails, Nepal offers journeys filled with natural beauty, rich traditions and unforgettable mountain experiences.
+
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- India -->
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="destination-card">
+
+                        <img src="/images/india.jpg"
+                             alt="Kathmandu heritage">
+
+                        <div class="destination-overlay">
+                            <!-- <span>A LAND OF DIVERSE LANDSCAPES</span> -->
+                            <h3>India</h3>
+                            <p>
+                              From the breathtaking Himalayan regions to vibrant cultures and timeless landscapes, India offers journeys shaped by nature, tradition and extraordinary diversity.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- Bhutan -->
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="destination-card">
+
+                        <img src="/images/tigernest.jpg"
+                             alt="Mustang landscape">
+
+                        <div class="destination-overlay">
+                            <!-- <span>THE KINGDOM OF HAPPINESS</span> -->
+                            <h3>Bhutan</h3>
+                            <p>
+                                From serene mountain valleys to ancient monasteries and traditional villages, Bhutan invites you to experience a peaceful journey through culture, nature and timeless traditions.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- Tibet -->
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="destination-card">
+
+                        <img src="/images/tibet.jpg"
+                             alt="Tibet landscape">
+
+                        <div class="destination-overlay">
+                            <!-- <span>THE ROOF OF THE WORLD</span> -->
+                            <h3>Tibet</h3>
+                            <p>
+                                From vast high-altitude landscapes to sacred monasteries and magnificent mountain ranges, Tibet offers a remarkable journey through spiritual heritage, breathtaking scenery and timeless Himalayan culture.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= TREKKING ROUTES ================= -->
+
+    <section class="section-padding" id="treks">
+
+        <div class="container">
+
+            <div class="section-heading text-center">
+
+                <p class="section-label">THE JOURNEY AWAITS</p>
+
+                <h2>Journeys Through the Himalayas</h2>
+
+                <p class="section-description">
+                    From remote alpine landscapes to legendary mountain trails,
+                    each journey offers a distinct way to experience the beauty,
+                    culture and spirit of the Himalayas.
+                </p>
+
+            </div>
+
+
+            <!-- Trek cards -->
+
+            <div class="row g-4">
+
+                <!-- Mardi Himal -->
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="trek-card">
+                        <!-- <div class="image" -->
+                          
+                             <div class="image-wrapper">
+                            <img src="/images/mardibc.jpg"
+                                 alt="Mardi Himal trekking landscape">
+                            <span class="image-tag">Annapurna Region</span>
+                            </div>  
+                            
+                        <div class="trek-content">
+                            <h3>Mardi Himal Trek</h3>
+                            <p>
+                                Winding through quiet forest trails and rising
+                                along striking mountain ridges, this journey
+                                reveals an intimate perspective of the
+                                Annapurna range.
+                            </p>
+                            <a href="destinations.html" class="text-link">
+                                Discover More <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- Everest Base Camp -->
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="trek-card">
+
+                        <div class="image-wrapper">
+                            <img src="/images/everstbc.jpg"
+                                 alt="Everest Base Camp mountains">
+                            <span class="image-tag">Everest Region</span>
+                        </div>
+
+                        <div class="trek-content">
+                            <h3>Everest Base Camp</h3>
+                            <p>
+                                Journey into the heart of the Khumbu, where
+                                rugged mountain landscapes, enduring Sherpa
+                                traditions and the immense presence of Everest
+                                create an unforgettable experience.
+                            </p>
+                            <a href="destinations.html" class="text-link">
+                                Discover More <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- Annapurna Base Camp -->
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="trek-card">
+
+                        <div class="image-wrapper">
+                            <img src="/images//abc.jpg"
+                                 alt="Annapurna Base Camp mountains">
+                            <span class="image-tag">Annapurna Region</span>
+                        </div>
+
+                        <div class="trek-content">
+                            <h3>Annapurna Base Camp</h3>
+                            <p>
+                                Ascend through changing landscapes, mountain
+                                settlements and alpine terrain into a remarkable
+                                natural amphitheatre surrounded by towering peaks.
+                            </p>
+                            <a href="destinations.html" class="text-link">
+                                Discover More <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- Langtang Valley
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="trek-card">
+
+                        <div class="image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=900"
+                                 alt="Langtang Valley landscape">
+                            <span class="image-tag">Langtang Region</span>
+                        </div>
+
+                        <div class="trek-content">
+                            <h3>Langtang Valley</h3>
+                            <p>
+                                Follow trails through alpine meadows, traditional
+                                settlements and dramatic mountain scenery in
+                                one of Nepal's most captivating trekking regions.
+                            </p>
+                            <a href="#contact" class="text-link">
+                                Discover More <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                 Ghorepani Poon Hill 
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="trek-card">
+
+                        <div class="image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=900"
+                                 alt="Poon Hill mountain scenery">
+                            <span class="image-tag">Annapurna Region</span>
+                        </div>
+
+                        <div class="trek-content">
+                            <h3>Ghorepani Poon Hill</h3>
+                            <p>
+                                Wander through rhododendron forests and charming
+                                mountain villages before witnessing the first
+                                light illuminate the Himalayan horizon.
+                            </p>
+                            <a href="#contact" class="text-link">
+                                Discover More <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                Gokyo Lakes 
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="trek-card">
+
+                        <div class="image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=900"
+                                 alt="Beautiful alpine lake landscape">
+                            <span class="image-tag">Everest Region</span>
+                        </div>
+
+                        <div class="trek-content">
+                            <h3>Gokyo Lakes</h3>
+                            <p>
+                                Discover a remarkable collection of turquoise
+                                alpine lakes, glacial landscapes and magnificent
+                                panoramas in the heart of the Everest region.
+                            </p>
+                            <a href="#contact" class="text-link">
+                                Discover More <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+     
+    </section> -->
+
+
+
+   
+
+
+    <!-- ================= POPULAR DESTINATIONS ================= -->
+
+    <section class="section-padding destinations-section" id="destinations">
+
+        <div class="container">
+
+            <div class="section-heading text-center">
+
+                <p class="section-label">PLACES WORTH DISCOVERING</p>
+
+                <h2>Explore the Beauty of Nepal</h2>
+
+                <!-- <p class="section-description">
+                    Beyond its celebrated trekking trails, Nepal unfolds
+                    through ancient cities, tranquil lakes, remarkable
+                    landscapes and destinations rich in heritage.
+                </p> -->
+
+            </div>
+
+
+            <div class="row g-4">
+
+                <!-- Pokhara -->
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="destination-card">
+
+                        <img src="/images/pkr.jpg"
+                             alt="Pokhara Nepal">
+
+                        <div class="destination-overlay">
+                            <span>THE CITY OF LAKES</span>
+                            <h3>Pokhara</h3>
+                            <p>
+                                Set against the magnificent Annapurna range,
+                                Pokhara blends serene lakeside scenery with
+                                an inviting spirit of adventure.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- Kathmandu -->
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="destination-card">
+
+                        <img src="https://images.unsplash.com/photo-1605640840605-14ac1855827b?w=900"
+                             alt="Kathmandu heritage">
+
+                        <div class="destination-overlay">
+                            <span>CULTURE & HERITAGE</span>
+                            <h3>Kathmandu</h3>
+                            <p>
+                                Discover a living tapestry of historic temples,
+                                intricate architecture and centuries-old
+                                cultural traditions.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- Mustang -->
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="destination-card">
+
+                        <img src="/images/mustang.jpg"
+                             alt="Mustang landscape">
+
+                        <div class="destination-overlay">
+                            <span>BEYOND THE ORDINARY</span>
+                            <h3>Mustang</h3>
+                            <p>
+                                Explore a striking world of arid mountain
+                                terrain, ancient settlements and distinctive
+                                Himalayan landscapes.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- Chitwan -->
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="destination-card">
+
+                        <img src="/images/chitwan.jpg"
+                             alt="Chitwan nature">
+
+                        <div class="destination-overlay">
+                            <span>NATURE & WILDLIFE</span>
+                            <h3>Chitwan</h3>
+                            <p>
+                                Experience another side of Nepal through
+                                lush forests, river landscapes and remarkable
+                                wildlife habitats.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= VEGAN EXPERIENCE ================= -->
+
+    <section class="vegan-section section-padding" id="vegan">
+
+        <div class="container">
+
+            <div class="row align-items-center g-5">
+
+
+
+                <div class="col-lg-6">
+
+                    <div class="vegan-content">
+
+                        <p class="section-label">TRAVEL WITH INTENTION</p>
+
+                        <h2>A Gentler Way to Journey Through the Mountains.</h2>
+
+                        <p>
+                            For us, travelling thoughtfully extends beyond
+                            the landscapes we admire. Inspired by a
+                            compassionate, plant-based way of living, we
+                            embrace opportunities to make mountain journeys
+                            more mindful, considerate and nourishing.
+                        </p>
+
+                        <p>
+                            Through vegan-friendly meals and a deeper
+                            appreciation for the natural world, we hope
+                            to make each adventure meaningful in more ways
+                            than one.
+                        </p>
+
+                        <div class="vegan-features">
+
+                            <div>
+                                <i class="bi bi-flower1"></i>
+                                <span>Plant-based experiences</span>
+                            </div>
+
+                            <div>
+                                <i class="bi bi-heart"></i>
+                                <span>Compassionate travel</span>
+                            </div>
+
+                            <div>
+                                <i class="bi bi-tree"></i>
+                                <span>Respect for nature</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                               <div class="col-lg-6">
+
+                    <div class="vegan-image-wrapper">
+                        <img src="/images/vegan.jpg"
+                             alt="Fresh plant-based meal">
+
+                        <div class="vegan-image-note">
+                            <i class="bi bi-leaf"></i>
+                            Conscious Travel
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT THE CEO ================= -->
+
+    <section class="section-padding about-section" id="about">
+
+        <div class="container">
+
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-5">
+
+                    <!-- Replace with CEO's actual photo -->
+                    <div class="ceo-image-wrapper">
+
+                        <img src="images/shakti.jpg"
+                             alt="Shakti Yonjan - Founder and CEO"
+                             onerror="this.src='https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=900'">
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-7">
+
+                    <div class="about-content">
+
+                        <p class="section-label">THE PERSON BEHIND THE JOURNEY</p>
+
+                        <h2>A Passion for the Mountains. A Commitment to Meaningful Journeys.</h2>
+
+                        <h4>Shakti Yonjan</h4>
+
+                        <span class="ceo-role">Founder & CEO · Trekking Mountain Nepal</span>
+
+                        <p>
+                            With [X] years of experience in the trekking
+                            and tourism industry, Shakti Yonjan brings
+                            valuable insight into Nepal's mountain trails,
+                            cultural heritage and the spirit of hospitality
+                            that makes travelling here so distinctive.
+                        </p>
+
+                        <p>
+                            Guided by his passion for the outdoors and
+                            his vegan philosophy, he believes that the
+                            most rewarding journeys are those that foster
+                            genuine connections — with nature, communities
+                            and the world around us.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= WHY CHOOSE US ================= -->
+
+    <section class="section-padding why-section">
+
+        <div class="container">
+
+            <div class="section-heading text-center">
+
+                <p class="section-label">THE DIFFERENCE IS IN THE JOURNEY</p>
+
+                <h2>Why Journey With Us?</h2>
+
+                <p class="section-description">
+                    Every memorable adventure begins with thoughtful
+                    planning, genuine hospitality and a deeper
+                    appreciation for the places we visit.
+                </p>
+
+            </div>
+
+
+            <div class="row g-4">
+
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="feature-card">
+                        <i class="bi bi-mountain"></i>
+                        <h4>Local Expertise</h4>
+                        <p>
+                            Experience Nepal through knowledge of its
+                            landscapes, trails and local communities.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="feature-card">
+                        <i class="bi bi-person-hearts"></i>
+                        <h4>Personalised Journeys</h4>
+                        <p>
+                            Thoughtful travel experiences shaped around
+                            individual interests and expectations.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="feature-card">
+                        <i class="bi bi-leaf"></i>
+                        <h4>Conscious Travel</h4>
+                        <p>
+                            A mindful approach to exploring nature,
+                            food and the world around us.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-3">
+
+                    <div class="feature-card">
+                        <i class="bi bi-globe-asia-australia"></i>
+                        <h4>Authentic Experiences</h4>
+                        <p>
+                            Discover the character of each destination
+                            through meaningful local encounters.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PHOTO GALLERY ================= -->
+
+   <!--
+    <section class="section-padding gallery-section">
+
+        <div class="container">
+
+            <div class="section-heading text-center">
+
+                <p class="section-label">MOMENTS FROM THE MOUNTAINS</p>
+
+                <h2>Stories Beyond the Trail</h2>
+
+                <p class="section-description">
+                    A glimpse into the landscapes, people and moments
+                    that make every journey worth remembering.
+                </p>
+
+            </div>
+
+
+            <div class="gallery-grid">
+
+                <div class="gallery-item gallery-tall">
+                    <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1000"
+                         alt="Himalayan mountains">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?w=900"
+                         alt="Nature and wildlife">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?w=900"
+                         alt="Beautiful landscape">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=900"
+                         alt="Mountain lake">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=900"
+                         alt="Mountain scenery">
+                </div>
+
+            </div>
+
+        </div>
+
+    </section> 
+   
+-->
+
+    <!-- ================= CONTACT SECTION ================= -->
+
+    <!-- <section class="contact-section" id="contact">
+
+        <div class="container">
+
+            <div class="contact-content text-center">
+
+                <p class="section-label">LET THE JOURNEY BEGIN</p>
+
+                <h2>Some Places Are Meant to Be Experienced.</h2>
+
+                <p>
+                    Whether the call of the mountains has brought you here
+                    or you are simply dreaming of your next adventure,
+                    we would be delighted to hear from you.
+                </p>
+
+                <a href="mailto:info@trekkingmountainnepal.com"
+                   class="btn hero-button">
+                    Get in Touch
+                    <i class="bi bi-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section> -->
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer-section">
+
+        <div class="container">
+
+            <div class="row g-5">
+
+                <!-- Company information -->
+
+                <div class="col-lg-4">
+
+                    <div class="footer-brand">
+
+                        <h3>TREKKING MOUNTAIN NEPAL</h3>
+
+                        <p>
+                            Thoughtfully curated journeys through the
+                            extraordinary landscapes of Nepal and Bhutan.
+                        </p>
+
+                    </div>
+
+                    <div class="social-links">
+
+                        <a href="#" aria-label="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+
+                        <a href="#" aria-label="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+
+                        <a href="#" aria-label="WhatsApp">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Quick links -->
+
+                <div class="col-6 col-lg-2">
+
+                    <h5>Explore</h5>
+
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#treks">Our Treks</a></li>
+                        <li><a href="#destinations">Destinations</a></li>
+                        <li><a href="#vegan">Vegan Experience</a></li>
+                        <li><a href="#about">About Us</a></li>
+                    </ul>
+
+                </div>
+
+
+                <!-- Contact details -->
+
+                <div class="col-6 col-lg-3">
+
+                    <h5>Get in Touch</h5>
+
+                    <ul class="footer-contact">
+
+                        <li>
+                            <i class="bi bi-geo-alt"></i>
+                            Chabahil, Kathmandu, Nepal
+                        </li>
+
+                        <li>
+                            <i class="bi bi-envelope"></i>
+                            info@trekkingmountainnepal.com
+                        </li>
+
+                        <li>
+                            <i class="bi bi-telephone"></i>
+                            +977-XXXXXXXXXX
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- Dummy map -->
+
+                <div class="col-lg-3">
+
+                    <h5>Find Us</h5>
+
+                    <div class="map-placeholder">
+
+                        <i class="bi bi-geo-alt-fill"></i>
+
+                        <span>Chabahil, Kathmandu</span>
+
+                        <small>Map location coming soon</small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    © <span id="currentYear"></span>
+                    Trekking Mountain Nepal. All rights reserved.
+                </p>
+
+                <p>Made with care for mountain lovers.</p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
